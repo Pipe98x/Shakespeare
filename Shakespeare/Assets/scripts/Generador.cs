@@ -24,6 +24,7 @@ public class Generador : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		GenerarTodos ();
 	}
 	
 	// Update is called once per frame
@@ -56,6 +57,7 @@ public class Generador : MonoBehaviour {
     }
 
 	public void GenerarConsumibles() {
+		BorrarTodos ();
 		BorrarConsumibles ();
 		BorrarEquipalbes ();
 		equipactivos = false;
@@ -73,9 +75,10 @@ public class Generador : MonoBehaviour {
 						Comprable consu;
 						consu = Instantiate (Objetos [i], ItemPadre.transform.position + vectors, ItemPadre.transform.rotation) as Comprable;
 						consu.transform.SetParent (ItemPadre.transform);
-						vectors += new Vector3 (80, 0, 0);
+						vectors += new Vector3 (100, 0, 0);
 						Consumiblesactivos.Add (consu);
 						verificadorConsu = 1;
+						consu.jugador = GameObject.FindGameObjectWithTag ("Player").gameObject;
 					}
 				}
 	
@@ -106,7 +109,17 @@ public class Generador : MonoBehaviour {
 
 	}
 
+	public void BorrarTodos() {
+
+		for (int i = 0; i < Activos.Count; i++) {
+			Activos [i].gameObject.SetActive(false);
+		}
+
+
+	}
+
 	public void GenerarEquipables() {
+		BorrarTodos ();
 		BorrarEquipalbes ();
 		BorrarConsumibles ();
 		todoactivos = false;
@@ -121,13 +134,14 @@ public class Generador : MonoBehaviour {
 				for (int i = 0; i < Objetos.Length; i++) {
 					if (Objetos [i] is Equipable) {
 						Comprable equi;
-						equi = Instantiate (Objetos [i], transform.position + vectors, transform.rotation) as Comprable;
+						equi = Instantiate (Objetos [i], ItemPadre.transform.position + vectors, transform.rotation) as Comprable;
 						equi.transform.SetParent (ItemPadre.transform);
+						equi.jugador = GameObject.FindGameObjectWithTag ("Player").gameObject;
 				
-						if (vectors.x == 160) {	
-							vectors = new Vector3 (0, -80, 0);
+						if (vectors.x == 300) {	
+							vectors = new Vector3 (0, -120, 0);
 						} else {
-							vectors += new Vector3 (80, 0, 0);
+							vectors += new Vector3 (100, 0, 0);
 
 						}
 						Equipablesactivos.Add (equi);
@@ -144,8 +158,8 @@ public class Generador : MonoBehaviour {
 			}
 	}
 }
-
 	public void GenerarTodos() {
+		
 		BorrarEquipalbes ();
 		BorrarConsumibles ();
 		consuactivos = false;
@@ -162,34 +176,28 @@ public class Generador : MonoBehaviour {
 				for (int i = 0; i < Objetos.Length; i++) {
 
 					Comprable todo;
-					todo = Instantiate (Objetos [i], transform.position + vectors, transform.rotation) as Comprable;
+					todo = Instantiate (Objetos [i], ItemPadre.transform.position + vectors, transform.rotation) as Comprable;
 					todo.transform.SetParent (ItemPadre.transform);
 					Activos.Add (todo);
+					todo.jugador = GameObject.FindGameObjectWithTag ("Player").gameObject;
 
-					if (vectors.x == 160) {	
-						vectors = new Vector3 (0, vectors.y -80, 0);
+					if (vectors.x == 300) {	
+						vectors = new Vector3 (0, vectors.y -120, 0);
 					} else {
-						vectors += new Vector3 (80, 0, 0);
+						vectors += new Vector3 (100, 0, 0);
 
 					}
 				}
 			} else {
 
-				if (verificadorConsu != 0 && verificadorEqui != 0) {
-
-					for (int i = 0; i < Consumiblesactivos.Count; i++) {
-						Consumiblesactivos [i].gameObject.SetActive(true);
-					}
-
-					for (int i = 0; i < Equipablesactivos.Count; i++) {
-						Equipablesactivos [i].gameObject.SetActive(true);
-					}
+				for (int i = 0; i < Activos.Count; i++) {
+					Activos [i].gameObject.SetActive(true);
 				}
-			
+
 			}
 		}
 
-		}
+	}
 
 	public void señal(){
 	
