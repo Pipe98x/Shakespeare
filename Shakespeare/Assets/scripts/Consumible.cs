@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Consumible : Comprable {
+public class Consumible : Comprable {  // hijo de comprable
 
 	// Use this for initialization
 	void Start () {

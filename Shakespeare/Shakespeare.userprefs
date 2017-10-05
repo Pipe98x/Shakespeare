@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Jugador.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Equipable.cs">
     <Files>
-      <File FileName="Assets\scripts\Generador.cs" Line="141" Column="27" />
-      <File FileName="Assets\scripts\Consumible.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Comprable.cs" Line="21" Column="68" />
-      <File FileName="Assets\scripts\Jugador.cs" Line="62" Column="34" />
+      <File FileName="Assets\scripts\Generador.cs" Line="210" Column="3" />
+      <File FileName="Assets\scripts\Consumible.cs" Line="5" Column="60" />
+      <File FileName="Assets\scripts\Comprable.cs" Line="25" Column="194" />
+      <File FileName="Assets\scripts\Jugador.cs" Line="30" Column="3" />
+      <File FileName="Assets\scripts\Equipable.cs" Line="25" Column="112" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -27,6 +27,7 @@ public class Jugador : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
 		if (vida > 40) {
 			vida = 40;			// para que la vida maxima sea 40
 		}
@@ -59,7 +60,7 @@ public class Jugador : MonoBehaviour {
 				equip.transform.SetParent (inventario.transform);
 				inventarioItems.Add (equip);
 				if (vectors.x >= 210) {	
-					vectors = new Vector3 (0, -70, 0);
+					vectors = new Vector3 (0, vectors.y-70, 0);
 				} else {
 					vectors += new Vector3 (70, 0, 0);
 
