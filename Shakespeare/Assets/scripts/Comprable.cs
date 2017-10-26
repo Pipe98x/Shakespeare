@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Comprable : MonoBehaviour {
+public abstract class Comprable : MonoBehaviour {
 
 	public int precio;		//todos los comprables tienen un precio
 	public int index;		// todos los comprables tienen un index

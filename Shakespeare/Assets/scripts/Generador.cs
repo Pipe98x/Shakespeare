@@ -8,6 +8,8 @@ public class Generador : MonoBehaviour {
 	public GameObject tiendita;			// para tener referencia de la tienda y poder prenderla y apagarla
 	public GameObject Inventario;		// para tener referencia del inventario y poder prenderlo y apagarlo
 	public GameObject ItemPadre;		// este gameobject va a contener los items de la tienda
+    public GameObject player;
+    public GameObject anuncioTienda;
 	public Comprable[] Objetos;			// arreglo con todos los objetos que se pueden comprar
 	private List<Comprable> Activos = new List<Comprable> ();		// Lista con los items instanciados en la tienda en la pestaña "todos"
 	private bool consuactivos = false;  // Para saber cual lista se está mostrando y evitar que se muestre dos veces
@@ -22,6 +24,7 @@ public class Generador : MonoBehaviour {
 	private int verificadorEqui = 0;
 	private int verificadorTodos = 0;
 
+
 	// Use this for initialization
 	void Start () {
 
@@ -32,18 +35,34 @@ public class Generador : MonoBehaviour {
 	void Update () {
 
 		if (Input.GetKeyDown (KeyCode.I)) {			// si se presiona la tecla I activar o desactivar la tienda
-
-			if (tiendactiva == false) {
-				tiendita.SetActive (true);
-				tiendactiva = true;
-			} else {
-				tiendita.SetActive (false);
-				tiendactiva = false;
-			}
+            if (player.GetComponent<Jugador>().comprarActivo == true)
+            {
+                if (tiendactiva == false)
+                {
+                    tiendita.SetActive(true);
+                    tiendactiva = true;
+                }
+                else
+                {
+                    tiendita.SetActive(false);
+                    tiendactiva = false;
+                }
+            } 
 		
 		}
 
-		if (Input.GetKeyDown (KeyCode.E)) {			// si se presiona la tecla E activar o desactivar el inventario
+        if (player.GetComponent<Jugador>().comprarActivo == false)
+        {
+            tiendita.SetActive(false);
+            tiendactiva = false;
+            anuncioTienda.SetActive(false);
+        }
+        else
+        {
+            anuncioTienda.SetActive(true);
+        }
+
+            if (Input.GetKeyDown (KeyCode.E)) {			// si se presiona la tecla E activar o desactivar el inventario
 
 			if (inventarioactivo == false) {
 				Inventario.SetActive (true);

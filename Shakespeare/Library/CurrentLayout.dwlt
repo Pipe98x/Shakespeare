@@ -106,8 +106,8 @@ MonoBehaviour:
     y: 30
     width: 1600
     height: 767
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
   controlID: 47
 --- !u!114 &6
@@ -130,7 +130,7 @@ MonoBehaviour:
     y: 0
     width: 1087
     height: 767
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 48
@@ -154,8 +154,8 @@ MonoBehaviour:
     y: 0
     width: 1087
     height: 486
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
   controlID: 49
 --- !u!114 &8
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 257
     height: 486
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -255,8 +255,8 @@ MonoBehaviour:
     y: 0
     width: 513
     height: 767
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -367,9 +367,9 @@ MonoBehaviour:
     height: 465
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4c280000
-    m_LastClickedID: 10316
-    m_ExpandedIDs: 08faffff0000000058290000
+    m_SelectedIDs: 84270000
+    m_LastClickedID: 10116
+    m_ExpandedIDs: e6fbffff000000009c260000d2280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -419,14 +419,14 @@ MonoBehaviour:
     width: 826
     height: 465
   m_SceneLighting: 1
-  lastFramingTime: 952.9735132247134
+  lastFramingTime: 14169.24256420613
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 392.43204, y: 605.1141, z: 24.752747}
+    m_Target: {x: 587.66583, y: 394.40314, z: -126.72107}
     speed: 2
-    m_Value: {x: 392.43204, y: 605.1141, z: 24.752747}
+    m_Value: {x: 587.66583, y: 394.40314, z: -126.72107}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -449,13 +449,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.039299037, y: -0.0053992206, z: 0.00021230352, w: -0.9992129}
+    m_Target: {x: -0.2232937, y: 0.031279463, z: -0.007169596, w: -0.97422284}
     speed: 2
-    m_Value: {x: -0.039299037, y: -0.0053992206, z: 0.00021230352, w: -0.9992129}
+    m_Value: {x: -0.2232937, y: 0.031279463, z: -0.007169596, w: -0.97422284}
   m_Size:
-    m_Target: 766.2304
+    m_Target: 894.58057
     speed: 2
-    m_Value: 766.2304
+    m_Value: 894.58057
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -491,7 +491,7 @@ MonoBehaviour:
     x: 259
     y: 92
     width: 826
-    height: 418
+    height: 465
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -572,19 +572,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/scripts
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Git\Shakespeare\Shakespeare
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 29}
-    m_SelectedIDs: 70260000
-    m_LastClickedID: 9840
-    m_ExpandedIDs: 00000000762500001c2600005e260000aa26000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 33}
+    m_SelectedIDs: b8240000
+    m_LastClickedID: 9400
+    m_ExpandedIDs: 00000000b824000076250000c0250000d62500002226000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -612,7 +612,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 4e3c0000
     m_LastClickedID: 15438
-    m_ExpandedIDs: 00000000762500001c2600005e260000aa260000
+    m_ExpandedIDs: 00000000b824000076250000c025000022260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
