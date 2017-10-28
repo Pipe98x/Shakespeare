@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 48
+  controlID: 52
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 49
+  controlID: 53
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 50
+  controlID: 54
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,20 +367,20 @@ MonoBehaviour:
     height: 465
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4cdcebff
-    m_LastClickedID: -1319860
-    m_ExpandedIDs: fccffeff02d0feff34d0feff3ad0feff6cd0feff72d0feffdcd0feffe2d0feff7073ffff7673ffffa873ffffae73ffffe073ffffe673ffff1874ffff1e74ffff5074ffff5674ffff8874ffff8e74ffffb474ffffba74ffffe074ffffe674ffff0c75ffff1275ffffd280ffffe4fbffff00000000682600002827000006280000742800001a290000
+    m_SelectedIDs: 74290000
+    m_LastClickedID: 10612
+    m_ExpandedIDs: 26c9ffffe4fbffff0000000074290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: BalaPersigue(Clone)
-      m_OriginalName: BalaPersigue(Clone)
+      m_Name: EnemigoGuardian
+      m_OriginalName: EnemigoGuardian
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -1155684
+      m_UserData: 10612
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -419,14 +419,14 @@ MonoBehaviour:
     width: 826
     height: 465
   m_SceneLighting: 1
-  lastFramingTime: 13552.179146261298
+  lastFramingTime: 2074.744979475876
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.9570286, y: -5.705248, z: 11.693663}
+    m_Target: {x: 6.127431, y: 2.0024307, z: 7.7289405}
     speed: 2
-    m_Value: {x: 1.9570286, y: -5.705248, z: 11.693663}
+    m_Value: {x: 6.127431, y: 2.0024307, z: 7.7289405}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -449,13 +449,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.21958946, y: 0.07163147, z: -0.01616886, w: -0.97282475}
+    m_Target: {x: -0.06742579, y: -0.028431945, z: 0.0019222205, w: -0.99731725}
     speed: 2
-    m_Value: {x: -0.21958946, y: 0.07163147, z: -0.01616886, w: -0.97282475}
+    m_Value: {x: -0.06742579, y: -0.028431945, z: 0.0019222205, w: -0.99731725}
   m_Size:
-    m_Target: 29.270662
+    m_Target: 4.721635
     speed: 2
-    m_Value: 29.270662
+    m_Value: 4.721635
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -514,16 +514,22 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 394
+    x: 259
     y: 92
-    width: 767
-    height: 423
+    width: 826
+    height: 465
   m_ViewPositions:
-    m_KeySerializationHelper: []
-    m_ValueSerializationHelper: []
+    m_KeySerializationHelper:
+    - {fileID: 1107171702516976764, guid: 1c374d8666acc7c42bbfd007cd0f7aa4, type: 2}
+    m_ValueSerializationHelper:
+    - {x: 459.6, y: 257}
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 0}
-  m_BreadCrumbs: []
+  m_AnimatorController: {fileID: 9100000, guid: 1c374d8666acc7c42bbfd007cd0f7aa4,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1107171702516976764, guid: 1c374d8666acc7c42bbfd007cd0f7aa4,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -572,19 +578,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/prefabs
+    - Assets/Level 1 Monster Pack/Models
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/prefabs
+  - Assets/Level 1 Monster Pack/Models
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Git\Shakespeare\Shakespeare
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 61}
-    m_SelectedIDs: 48260000
-    m_LastClickedID: 9800
-    m_ExpandedIDs: 00000000c02400009a250000e4250000fa2500004826000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 157}
+    m_SelectedIDs: 18300000
+    m_LastClickedID: 12312
+    m_ExpandedIDs: 00000000ca2400003a250000c6250000382600005a260000c2260000c82600000e300000143000001c30000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -612,7 +618,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 4e3c0000
     m_LastClickedID: 15438
-    m_ExpandedIDs: 00000000c02400009a250000e4250000fa25000048260000
+    m_ExpandedIDs: 00000000ca2400003a250000c6250000382600005a260000c2260000c8260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,21 +646,21 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000e026000094e8fbff000000009425000090250000
+    m_ExpandedInstanceIDs: c6230000e026000094e8fbff94250000902500000000000020300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Dano2
-      m_OriginalName: Dano2
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 9490
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:

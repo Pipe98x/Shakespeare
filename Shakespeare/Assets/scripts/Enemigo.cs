@@ -12,10 +12,7 @@ public abstract class Enemigo : Personaje {
 	// Update is called once per frame
 	void Update () {
 		
-        if (vida <= 0)
-        {
-            morir();
-        }
+        
 	}
 
     public virtual void Moverse()

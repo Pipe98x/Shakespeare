@@ -24,6 +24,8 @@ public class Jugador : Personaje {
     private bool atacando = false;
     public bool comprarActivo = false;
     private int daño = 10;
+    public GameObject generador;
+    public Equipable[] ItemsActivos;
 
     // Use this for initialization
     void Start () {
@@ -34,7 +36,7 @@ public class Jugador : Personaje {
     void Update()
     {
         daño = daño + ATK;
-
+        
 
         if (vida > 40)
         {
@@ -97,11 +99,14 @@ public class Jugador : Personaje {
         {
             if (modo == 1)
             {
-                if (!atacando)
+                if (!generador.GetComponent<Generador>().tiendactiva && !generador.GetComponent<Generador>().inventarioactivo)
                 {
-                    Disparar();
-                    atacando = true;
-                    StartCoroutine(espera());
+                    if (!atacando)
+                    {
+                        Disparar();
+                        atacando = true;
+                        StartCoroutine(espera());
+                    }
                 }
             }
 
@@ -134,7 +139,8 @@ public class Jugador : Personaje {
 				equip = Instantiate (equipables [index], (inventario.transform.position + vectors), transform.rotation) as Equipable;
 				equip.transform.SetParent (inventario.transform);
 				inventarioItems.Add (equip);
-				if (vectors.x >= 210) {	
+                equip.jugador = GameObject.FindGameObjectWithTag("Player").gameObject;
+                if (vectors.x >= 210) {	
 					vectors = new Vector3 (0, vectors.y-70, 0);
 				} else {
 					vectors += new Vector3 (70, 0, 0);

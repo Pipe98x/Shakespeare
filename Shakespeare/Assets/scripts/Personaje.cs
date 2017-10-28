@@ -20,8 +20,8 @@ public abstract class Personaje : MonoBehaviour {
 		
 	}
 
-	public void morir() {
-
+	public void Morir() {
+        Destroy(gameObject);
 	}
 
     public void saltar(float fuerza)

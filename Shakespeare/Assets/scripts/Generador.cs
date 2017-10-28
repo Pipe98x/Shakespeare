@@ -15,8 +15,8 @@ public class Generador : MonoBehaviour {
 	private bool consuactivos = false;  // Para saber cual lista se está mostrando y evitar que se muestre dos veces
 	private bool equipactivos = false;  // Para saber cual lista se está mostrando y evitar que se muestre dos veces
 	private bool todoactivos = false;	// Para saber cual lista se está mostrando y evitar que se muestre dos veces
-	private bool tiendactiva = false;	// Para saber si la tienda se está mostrando
-	private bool inventarioactivo = false; // Para saber si el inventario se está mostrando
+	public bool tiendactiva = false;	// Para saber si la tienda se está mostrando
+	public bool inventarioactivo = false; // Para saber si el inventario se está mostrando
 	private Vector3 vectors = new Vector3 (0, 0, 0); // para ir modificando la posicion en que se instancia el item
 	private List<Comprable> Consumiblesactivos = new List<Comprable>();  // aqui se almecenan los items instanciados por el boton Consumibles
 	private int verificadorConsu = 0;	//verifica si ya fueron instanciados

@@ -6,12 +6,14 @@ public class EnemigoPersigue : Enemigo {
 
     private Vector3 heading;
     private float distancia;
-    private Vector3 direccion;
+    public Vector3 direccion;
     public GameObject objetivo;
     private int lado = 1;
+    public GameObject Monstruo;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -32,10 +34,13 @@ public class EnemigoPersigue : Enemigo {
 
         if (vida <= 0)
         {
-            Destroy(gameObject);
+            Monstruo.GetComponent<Animation_Test>().DeathAni();
+            Invoke("Morir", 0.9f);
         }
 
 	}
+
+  
 
     public override void Moverse()
     {
@@ -49,6 +54,12 @@ public class EnemigoPersigue : Enemigo {
             lado *= -1;
         }
 
-       
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<Jugador>().vida -= ATK;
+            vida = -1;
+        }
+
+
     }
 }

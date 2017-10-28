@@ -8,6 +8,8 @@ public class Equipable : Comprable {
 	public int Ataque;	
 	public int Defensa;
 	public int Velocidad;
+    private bool equipado = false;
+    private int posicionequipado;
 
 
 
@@ -29,4 +31,33 @@ public class Equipable : Comprable {
 		estadis_velocidad.text = Velocidad.ToString ();
 		
 	}
+
+    public void Equipar()
+    {
+        if (!equipado)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                if (!jugador.GetComponent<Jugador>().ItemsActivos[i])
+                {
+                    jugador.GetComponent<Jugador>().ATK += Ataque;
+                    jugador.GetComponent<Jugador>().defensa += Defensa;
+                    jugador.GetComponent<Jugador>().velocidad += Velocidad;
+                    equipado = true;
+                    jugador.GetComponent<Jugador>().ItemsActivos[i] = this;
+                    posicionequipado = i;
+                    break;
+                }
+            }
+            
+        } else
+        {
+            jugador.GetComponent<Jugador>().ATK -= Ataque;
+            jugador.GetComponent<Jugador>().defensa -= Defensa;
+            jugador.GetComponent<Jugador>().velocidad -= Velocidad;
+            equipado = false;
+            
+            
+        }
+    }
 }

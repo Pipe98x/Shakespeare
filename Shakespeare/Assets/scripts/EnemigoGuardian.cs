@@ -50,7 +50,7 @@ public class EnemigoGuardian : Enemigo {
     public override void Moverse()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * velocidad);
-        transform.Rotate(new Vector3(0, 10, 0) * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 20, 0) * Time.deltaTime);
     }
 
     public void Disparar()
@@ -58,7 +58,7 @@ public class EnemigoGuardian : Enemigo {
         if (!disparando)
         {
             GameObject balala;
-            balala = Instantiate(bala, arma.transform.position, Quaternion.Euler(-3, 0, 0));
+            balala = Instantiate(bala, arma.transform.position, Quaternion.Euler(0, 0, 0));
             balala.GetComponent<BalaPersigue>().direc = apuntar;
             balala.GetComponent<BalaPersigue>().poder = ATK;
             disparando = true;
