@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1600
     height: 767
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 47
+  controlID: 48
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1087
     height: 767
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 48
+  controlID: 49
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1087
     height: 486
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 49
+  controlID: 50
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 257
     height: 486
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -255,8 +255,8 @@ MonoBehaviour:
     y: 0
     width: 513
     height: 767
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -367,23 +367,23 @@ MonoBehaviour:
     height: 465
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 84270000
-    m_LastClickedID: 10116
-    m_ExpandedIDs: e6fbffff000000009c260000d2280000
+    m_SelectedIDs: 4cdcebff
+    m_LastClickedID: -1319860
+    m_ExpandedIDs: fccffeff02d0feff34d0feff3ad0feff6cd0feff72d0feffdcd0feffe2d0feff7073ffff7673ffffa873ffffae73ffffe073ffffe673ffff1874ffff1e74ffff5074ffff5674ffff8874ffff8e74ffffb474ffffba74ffffe074ffffe674ffff0c75ffff1275ffffd280ffffe4fbffff00000000682600002827000006280000742800001a290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: BalaPersigue(Clone)
+      m_OriginalName: BalaPersigue(Clone)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -1155684
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -419,14 +419,14 @@ MonoBehaviour:
     width: 826
     height: 465
   m_SceneLighting: 1
-  lastFramingTime: 14169.24256420613
+  lastFramingTime: 13552.179146261298
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 587.66583, y: 394.40314, z: -126.72107}
+    m_Target: {x: 1.9570286, y: -5.705248, z: 11.693663}
     speed: 2
-    m_Value: {x: 587.66583, y: 394.40314, z: -126.72107}
+    m_Value: {x: 1.9570286, y: -5.705248, z: 11.693663}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -449,13 +449,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.2232937, y: 0.031279463, z: -0.007169596, w: -0.97422284}
+    m_Target: {x: -0.21958946, y: 0.07163147, z: -0.01616886, w: -0.97282475}
     speed: 2
-    m_Value: {x: -0.2232937, y: 0.031279463, z: -0.007169596, w: -0.97422284}
+    m_Value: {x: -0.21958946, y: 0.07163147, z: -0.01616886, w: -0.97282475}
   m_Size:
-    m_Target: 894.58057
+    m_Target: 29.270662
     speed: 2
-    m_Value: 894.58057
+    m_Value: 29.270662
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -572,19 +572,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/prefabs
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Git\Shakespeare\Shakespeare
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 33}
-    m_SelectedIDs: b8240000
-    m_LastClickedID: 9400
-    m_ExpandedIDs: 00000000b824000076250000c0250000d62500002226000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 61}
+    m_SelectedIDs: 48260000
+    m_LastClickedID: 9800
+    m_ExpandedIDs: 00000000c02400009a250000e4250000fa2500004826000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -612,7 +612,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 4e3c0000
     m_LastClickedID: 15438
-    m_ExpandedIDs: 00000000b824000076250000c025000022260000
+    m_ExpandedIDs: 00000000c02400009a250000e4250000fa25000048260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -643,18 +643,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000e026000094e8fbff000000009425000090250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Dano2
+      m_OriginalName: Dano2
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 9490
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -689,10 +689,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 529
-    width: 1074
-    height: 301
+    x: 0
+    y: 578
+    width: 1085
+    height: 260
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52

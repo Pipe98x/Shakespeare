@@ -23,6 +23,7 @@ public class Jugador : Personaje {
     public Collider ataque;
     private bool atacando = false;
     public bool comprarActivo = false;
+    private int daño = 10;
 
     // Use this for initialization
     void Start () {
@@ -32,6 +33,7 @@ public class Jugador : Personaje {
     // Update is called once per frame
     void Update()
     {
+        daño = daño + ATK;
 
 
         if (vida > 40)
@@ -59,17 +61,17 @@ public class Jugador : Personaje {
         /// movimiento 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector3.left * 4 * Time.deltaTime);
+            transform.Translate(Vector3.left * 3 * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector3.right * 4 * Time.deltaTime);
+            transform.Translate(Vector3.right * 3 * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(Vector3.forward * 7 * Time.deltaTime);
+            transform.Translate(Vector3.forward * 5 * Time.deltaTime);
 
         }
 
@@ -95,7 +97,12 @@ public class Jugador : Personaje {
         {
             if (modo == 1)
             {
-                Disparar();
+                if (!atacando)
+                {
+                    Disparar();
+                    atacando = true;
+                    StartCoroutine(espera());
+                }
             }
 
             if (modo == -1)
@@ -110,8 +117,9 @@ public class Jugador : Personaje {
 
     public void Disparar ()
     {
-        Instantiate(bala, transform.position + new Vector3(0, 1, 0), transform.rotation);
-        atacando = true;
+        GameObject newbala;
+        newbala = Instantiate(bala, transform.position + new Vector3(0, 1, 0), transform.rotation);
+        newbala.GetComponent<Bala>().poder = daño;
         StartCoroutine(espera());
     }
 

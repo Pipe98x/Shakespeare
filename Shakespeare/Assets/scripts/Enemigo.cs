@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemigo : Personaje {
+public abstract class Enemigo : Personaje {
 
 	// Use this for initialization
 	void Start () {
@@ -12,7 +12,15 @@ public class Enemigo : Personaje {
 	// Update is called once per frame
 	void Update () {
 		
+        if (vida <= 0)
+        {
+            morir();
+        }
 	}
+
+    public virtual void Moverse()
+    {
+    }
 
 
 }

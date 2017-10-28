@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Personaje : MonoBehaviour {
 	public int vida;
 	public float velocidad;
-	public int daño;
+	public int ATK;
 	public int defensa;
     public Rigidbody rig;
     public float alturasalto;
@@ -21,9 +21,7 @@ public abstract class Personaje : MonoBehaviour {
 	}
 
 	public void morir() {
-		if (vida <= 0) {
-			Debug.Log ("Muerto");
-		}
+
 	}
 
     public void saltar(float fuerza)
@@ -31,7 +29,6 @@ public abstract class Personaje : MonoBehaviour {
         rig.AddForce(new Vector3(0, fuerza, 0), ForceMode.Impulse);
     }
 
-	public void Moverse() {
-	}
+	
 
 }

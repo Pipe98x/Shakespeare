@@ -78,12 +78,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\Apuntar.cs" />
     <Compile Include="Assets\scripts\Bala.cs" />
+    <Compile Include="Assets\scripts\BalaPersigue.cs" />
     <Compile Include="Assets\scripts\Camara.cs" />
     <Compile Include="Assets\scripts\Comprable.cs" />
     <Compile Include="Assets\scripts\Consumible.cs" />
     <Compile Include="Assets\scripts\Corazones.cs" />
     <Compile Include="Assets\scripts\Enemigo.cs" />
+    <Compile Include="Assets\scripts\EnemigoGuardian.cs" />
+    <Compile Include="Assets\scripts\EnemigoPersigue.cs" />
     <Compile Include="Assets\scripts\Equipable.cs" />
     <Compile Include="Assets\scripts\Generador.cs" />
     <Compile Include="Assets\scripts\Jugador.cs" />
