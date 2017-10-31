@@ -4,6 +4,9 @@ using UnityEngine;
 
 public abstract class Enemigo : Personaje {
 
+	public GameObject[] loot;
+    private bool loots = false;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -17,6 +20,15 @@ public abstract class Enemigo : Personaje {
 
     public virtual void Moverse()
     {
+    }
+
+    public void DarLoot()
+    {
+        if (!loots)
+        {
+            Instantiate(loot[Random.Range(0, 10)], transform.position, transform.rotation);
+            loots = true;
+        }
     }
 
 

@@ -13,6 +13,12 @@ public class BalaPersigue : Bala {
 	// Update is called once per frame
 	void Update () {
         Moverse();
+		distancia -= Time.deltaTime;
+		Moverse();
+
+		if (distancia <= 0) {
+			Destruir ();
+		}
 
 	}
     public override void OnCollisionEnter(Collision collision)
@@ -20,7 +26,7 @@ public class BalaPersigue : Bala {
         
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Jugador>().vida -= poder;
+			collision.gameObject.GetComponent<Jugador>().RecibirDano(poder);
             Destroy(gameObject);
         }
     }

@@ -1,0 +1,1224 @@
+fileFormatVersion: 2
+guid: 1b969422bed722a4e951fb4754511728
+timeCreated: 1509416945
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ArmShakes
+    100002: Bone
+    100004: Bone_001
+    100006: Bone_002
+    100008: Bone_003
+    100010: Bone_004
+    100012: Bone_005
+    100014: Bone_006
+    100016: Bone_007
+    100018: Bone_008
+    100020: Bone_009
+    100022: Bone_010
+    100024: Bone_011
+    100026: Bone_012
+    100028: Bone_013
+    100030: Bone_014
+    100032: Bone_015
+    100034: Bone_016
+    100036: Bone_017
+    100038: Bone_018
+    100040: Bone_019
+    100042: Bone_020
+    100044: Bone_021
+    100046: Cabeza
+    100048: Espada
+    100050: Guia
+    100052: HandRight
+    100054: LeftArm1
+    100056: LeftArm2
+    100058: LeftHand
+    100060: LeftLeg
+    100062: LeftLeg2
+    100064: Neck
+    100066: //RootNode
+    100068: RightArm1
+    100070: RightArm2
+    100072: RightLeg
+    100074: RightLeg2
+    100076: Shakespeare
+    100078: ShoulderL
+    100080: ShoulderR
+    100082: Talon
+    100084: TalonLeft
+    100086: Torso
+    400000: ArmShakes
+    400002: Bone
+    400004: Bone_001
+    400006: Bone_002
+    400008: Bone_003
+    400010: Bone_004
+    400012: Bone_005
+    400014: Bone_006
+    400016: Bone_007
+    400018: Bone_008
+    400020: Bone_009
+    400022: Bone_010
+    400024: Bone_011
+    400026: Bone_012
+    400028: Bone_013
+    400030: Bone_014
+    400032: Bone_015
+    400034: Bone_016
+    400036: Bone_017
+    400038: Bone_018
+    400040: Bone_019
+    400042: Bone_020
+    400044: Bone_021
+    400046: Cabeza
+    400048: Espada
+    400050: Guia
+    400052: HandRight
+    400054: LeftArm1
+    400056: LeftArm2
+    400058: LeftHand
+    400060: LeftLeg
+    400062: LeftLeg2
+    400064: Neck
+    400066: //RootNode
+    400068: RightArm1
+    400070: RightArm2
+    400072: RightLeg
+    400074: RightLeg2
+    400076: Shakespeare
+    400078: ShoulderL
+    400080: ShoulderR
+    400082: Talon
+    400084: TalonLeft
+    400086: Torso
+    4300000: Espada
+    4300002: Shakespeare
+    7400000: Default Take
+    7400002: ArmShakesAction
+    7400004: Idle
+    7400006: WalkingShakespeare
+    7400008: EspadaShakespeare
+    7400010: CambiarArma
+    7400012: DisparoShakespeare
+    7400014: WalkingArma
+    7400016: ArmShakesAction (1)
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Espada
+    13700002: Shakespeare
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 312
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmShakes
+        weight: 1
+      - path: ArmShakes/Guia
+        weight: 1
+      - path: ArmShakes/Guia/Torso
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018/Bone_019
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/TalonLeft
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck/Cabeza
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016/Bone_017
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Talon
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone/Bone_001
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002/Bone_003
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004/Bone_005
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006/Bone_007
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008/Bone_009
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010/Bone_013
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011/Bone_014
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012/Bone_015
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020/Bone_021
+        weight: 1
+      - path: Espada
+        weight: 1
+      - path: Shakespeare
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmShakesAction
+      takeName: ArmShakesAction
+      firstFrame: 1
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmShakes
+        weight: 1
+      - path: ArmShakes/Guia
+        weight: 1
+      - path: ArmShakes/Guia/Torso
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018/Bone_019
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/TalonLeft
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck/Cabeza
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016/Bone_017
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Talon
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone/Bone_001
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002/Bone_003
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004/Bone_005
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006/Bone_007
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008/Bone_009
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010/Bone_013
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011/Bone_014
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012/Bone_015
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020/Bone_021
+        weight: 1
+      - path: Espada
+        weight: 1
+      - path: Shakespeare
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: ArmShakesAction
+      firstFrame: 20
+      lastFrame: 40
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmShakes
+        weight: 1
+      - path: ArmShakes/Guia
+        weight: 1
+      - path: ArmShakes/Guia/Torso
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018/Bone_019
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/TalonLeft
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck/Cabeza
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016/Bone_017
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Talon
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone/Bone_001
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002/Bone_003
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004/Bone_005
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006/Bone_007
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008/Bone_009
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010/Bone_013
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011/Bone_014
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012/Bone_015
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020/Bone_021
+        weight: 1
+      - path: Espada
+        weight: 1
+      - path: Shakespeare
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WalkingShakespeare
+      takeName: ArmShakesAction
+      firstFrame: 87
+      lastFrame: 122
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmShakes
+        weight: 1
+      - path: ArmShakes/Guia
+        weight: 1
+      - path: ArmShakes/Guia/Torso
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018/Bone_019
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/TalonLeft
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck/Cabeza
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016/Bone_017
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Talon
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone/Bone_001
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002/Bone_003
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004/Bone_005
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006/Bone_007
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008/Bone_009
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010/Bone_013
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011/Bone_014
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012/Bone_015
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020/Bone_021
+        weight: 1
+      - path: Espada
+        weight: 1
+      - path: Shakespeare
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: EspadaShakespeare
+      takeName: Default Take
+      firstFrame: 50
+      lastFrame: 85
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmShakes
+        weight: 1
+      - path: ArmShakes/Guia
+        weight: 1
+      - path: ArmShakes/Guia/Torso
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018/Bone_019
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/TalonLeft
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck/Cabeza
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016/Bone_017
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Talon
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone/Bone_001
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002/Bone_003
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004/Bone_005
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006/Bone_007
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008/Bone_009
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010/Bone_013
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011/Bone_014
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012/Bone_015
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020/Bone_021
+        weight: 1
+      - path: Espada
+        weight: 1
+      - path: Shakespeare
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CambiarArma
+      takeName: Default Take
+      firstFrame: 85
+      lastFrame: 164
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmShakes
+        weight: 1
+      - path: ArmShakes/Guia
+        weight: 1
+      - path: ArmShakes/Guia/Torso
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018/Bone_019
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/TalonLeft
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck/Cabeza
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016/Bone_017
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Talon
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone/Bone_001
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002/Bone_003
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004/Bone_005
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006/Bone_007
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008/Bone_009
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010/Bone_013
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011/Bone_014
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012/Bone_015
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020/Bone_021
+        weight: 1
+      - path: Espada
+        weight: 1
+      - path: Shakespeare
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DisparoShakespeare
+      takeName: Default Take
+      firstFrame: 226
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmShakes
+        weight: 1
+      - path: ArmShakes/Guia
+        weight: 1
+      - path: ArmShakes/Guia/Torso
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018/Bone_019
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/TalonLeft
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck/Cabeza
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016/Bone_017
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Talon
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone/Bone_001
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002/Bone_003
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004/Bone_005
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006/Bone_007
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008/Bone_009
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010/Bone_013
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011/Bone_014
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012/Bone_015
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020/Bone_021
+        weight: 1
+      - path: Espada
+        weight: 1
+      - path: Shakespeare
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WalkingArma
+      takeName: Default Take
+      firstFrame: 180
+      lastFrame: 222
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmShakes
+        weight: 1
+      - path: ArmShakes/Guia
+        weight: 1
+      - path: ArmShakes/Guia/Torso
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018/Bone_019
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/TalonLeft
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck/Cabeza
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016/Bone_017
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Talon
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone/Bone_001
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002/Bone_003
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004/Bone_005
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006/Bone_007
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008/Bone_009
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010/Bone_013
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011/Bone_014
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012/Bone_015
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020/Bone_021
+        weight: 1
+      - path: Espada
+        weight: 1
+      - path: Shakespeare
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmShakesAction (1)
+      takeName: ArmShakesAction
+      firstFrame: 10
+      lastFrame: 180
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmShakes
+        weight: 1
+      - path: ArmShakes/Guia
+        weight: 1
+      - path: ArmShakes/Guia/Torso
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/Bone_018/Bone_019
+        weight: 1
+      - path: ArmShakes/Guia/Torso/LeftLeg/LeftLeg2/TalonLeft
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck
+        weight: 1
+      - path: ArmShakes/Guia/Torso/Neck/Cabeza
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Bone_016/Bone_017
+        weight: 1
+      - path: ArmShakes/Guia/Torso/RightLeg/RightLeg2/Talon
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone/Bone_001
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_002/Bone_003
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_004/Bone_005
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderL/LeftArm1/LeftArm2/LeftHand/Bone_006/Bone_007
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_008/Bone_009
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_010/Bone_013
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_011/Bone_014
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_012/Bone_015
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020
+        weight: 1
+      - path: ArmShakes/Guia/Torso/ShoulderR/RightArm1/RightArm2/HandRight/Bone_020/Bone_021
+        weight: 1
+      - path: Espada
+        weight: 1
+      - path: Shakespeare
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

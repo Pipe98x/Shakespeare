@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bala : MonoBehaviour {
+public class Bala: MonoBehaviour {
 
     public int poder;
     public float velocidad;
+	public float distancia;
+    public GameObject particulas;
     
 
 	// Use this for initialization
@@ -15,8 +17,13 @@ public class Bala : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		
+		distancia -= Time.deltaTime;
         Moverse();
+
+		if (distancia <= 0) {
+			Destruir ();
+		}
     }
 
     public virtual void OnCollisionEnter(Collision collision)
@@ -27,10 +34,20 @@ public class Bala : MonoBehaviour {
             Destroy(gameObject);
 
         }
+
+		if (collision.gameObject.name == "Jefe")
+		{
+			collision.gameObject.GetComponent<EnemigoJefe>().Daño();
+
+		}
     }
 
     public virtual void Moverse()
     {
-        transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
+        transform.Translate(Vector3.right * velocidad * Time.deltaTime);
     }
+
+	public void Destruir() {
+		Destroy (gameObject);
+	}
 }

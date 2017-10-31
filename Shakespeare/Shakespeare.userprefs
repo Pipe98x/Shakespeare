@@ -1,15 +1,22 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Jugador.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Corazones.cs">
     <Files>
       <File FileName="Assets\scripts\Generador.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Consumible.cs" Line="5" Column="60" />
-      <File FileName="Assets\scripts\Comprable.cs" Line="6" Column="16" />
-      <File FileName="Assets\scripts\Jugador.cs" Line="51" Column="3" />
-      <File FileName="Assets\scripts\Equipable.cs" Line="25" Column="112" />
-      <File FileName="Assets\scripts\Corazones.cs" Line="17" Column="3" />
-      <File FileName="Assets\scripts\Personaje.cs" Line="29" Column="2" />
-      <File FileName="Assets\scripts\Enemigo.cs" Line="17" Column="2" />
+      <File FileName="Assets\scripts\Consumible.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Comprable.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Jugador.cs" Line="199" Column="4" />
+      <File FileName="Assets\scripts\Equipable.cs" Line="45" Column="63" />
+      <File FileName="Assets\scripts\Corazones.cs" Line="31" Column="5" />
+      <File FileName="Assets\scripts\Personaje.cs" Line="24" Column="29" />
+      <File FileName="Assets\scripts\Enemigo.cs" Line="7" Column="27" />
+      <File FileName="Assets\scripts\EnemigoGuardian.cs" Line="77" Column="19" />
+      <File FileName="Assets\scripts\Bala.cs" Line="39" Column="59" />
+      <File FileName="Assets\scripts\BalaPersigue.cs" Line="31" Column="10" />
+      <File FileName="Assets\PinwheelFantasyEffectFreePack2\Scripts\Fireball.cs" Line="21" Column="4" />
+      <File FileName="Assets\scripts\EnemigoJefe.cs" Line="38" Column="26" />
+      <File FileName="Assets\scripts\EnemigoPersigue.cs" Line="33" Column="10" />
+      <File FileName="Assets\scripts\BalaJefe.cs" Line="43" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

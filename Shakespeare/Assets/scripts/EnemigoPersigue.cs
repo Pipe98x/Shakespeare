@@ -36,6 +36,8 @@ public class EnemigoPersigue : Enemigo {
         {
             Monstruo.GetComponent<Animation_Test>().DeathAni();
             Invoke("Morir", 0.9f);
+            DarLoot();
+            
         }
 
 	}
@@ -56,7 +58,7 @@ public class EnemigoPersigue : Enemigo {
 
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Jugador>().vida -= ATK;
+			collision.gameObject.GetComponent<Jugador>().RecibirDano(ATK);
             vida = -1;
         }
 

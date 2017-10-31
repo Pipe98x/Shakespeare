@@ -29,6 +29,10 @@ public class EnemigoGuardian : Enemigo {
         distancia = heading.magnitude;
         apuntar = heading / distancia;
 
+		if (vida <= 0) {
+			Morir ();
+		}
+
         if (distancia <= 10)
         {
             Disparar();
@@ -65,4 +69,17 @@ public class EnemigoGuardian : Enemigo {
         }
 
     }
+
+	public void OnTriggerEnter(Collider trigger){
+
+		if (trigger.gameObject.name == "Jefe"){
+
+			AumentoVida ();
+	}
 }
+	public void AumentoVida(){
+		vida += 3;
+		Invoke ("AumentoVida", 10);
+	}
+}
+

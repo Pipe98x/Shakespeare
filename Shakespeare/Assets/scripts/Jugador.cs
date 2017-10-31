@@ -23,9 +23,12 @@ public class Jugador : Personaje {
     public Collider ataque;
     private bool atacando = false;
     public bool comprarActivo = false;
-    private int daño = 10;
     public GameObject generador;
     public Equipable[] ItemsActivos;
+	private Vector3 heading;
+	private Vector3 direccionjefe;
+	private float distanciajefe;
+    public Animation anim;
 
     // Use this for initialization
     void Start () {
@@ -35,18 +38,25 @@ public class Jugador : Personaje {
     // Update is called once per frame
     void Update()
     {
-        daño = daño + ATK;
-        
+		heading = GameObject.Find ("Jefe").transform.position - transform.position;
+		distanciajefe = heading.magnitude;
+		direccionjefe = heading / distanciajefe;
 
         if (vida > 40)
         {
             vida = 40;          // para que la vida maxima sea 40
         }
 
+        if (vida < 0)
+        {
+            vida = 0;
+        }
+
         monedastienda.text = monedas.ToString();   // que se muestren las monedas en la tienda
         PocionesVida.text = pocionesvida.ToString();	// que se muestren la cantidad de pociones (int)
         PocionesVelocidad.text = pocionesvelocidad.ToString();
         PocionesFuerza.text = pocionesfuerza.ToString();
+
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -59,27 +69,38 @@ public class Jugador : Personaje {
 
             }
         }
-
+        if (!(Input.GetKeyDown(KeyCode.A)) && !(Input.GetKey(KeyCode.D)) && !(Input.GetKey(KeyCode.W)) && !(Input.GetKey(KeyCode.S)) && !atacando)
+        {
+            anim.CrossFade("Idle", 0);
+        }
         /// movimiento 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector3.left * 3 * Time.deltaTime);
+            transform.Translate(Vector3.back * 3 * Time.deltaTime);
+            
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector3.right * 3 * Time.deltaTime);
+            transform.Translate(Vector3.forward * 3 * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(Vector3.forward * 5 * Time.deltaTime);
+            transform.Translate(Vector3.left* 5 * Time.deltaTime);
+            if (modo == 1)
+            {
+                anim.CrossFade("WalkingArma", 0);
+            }else
+            {
+                anim.CrossFade("WalkingShakespeare", 0);
+            }
 
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(Vector3.back * 2 * Time.deltaTime);
+            transform.Translate(Vector3.right * 2 * Time.deltaTime);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -91,6 +112,7 @@ public class Jugador : Personaje {
         if (Input.GetKeyDown(KeyCode.C))
         {
             modo *= -1;
+            anim.CrossFade("CambiarArma", 0);
 
         }
 
@@ -104,6 +126,7 @@ public class Jugador : Personaje {
                     if (!atacando)
                     {
                         Disparar();
+                        anim.CrossFade("DisparoShakespeare", 0);
                         atacando = true;
                         StartCoroutine(espera());
                     }
@@ -112,9 +135,13 @@ public class Jugador : Personaje {
 
             if (modo == -1)
             {
-                //ataque.enabled = true;
-                atacando = true;
-                StartCoroutine(espera());
+                if (!atacando)
+                {
+                    //ataque.enabled = true;
+                    atacando = true;
+                    StartCoroutine(espera());
+                    anim.CrossFade("EspadaShakespeare", 0);
+                }
             }
 
         }
@@ -124,7 +151,7 @@ public class Jugador : Personaje {
     {
         GameObject newbala;
         newbala = Instantiate(bala, transform.position + new Vector3(0, 1, 0), transform.rotation);
-        newbala.GetComponent<Bala>().poder = daño;
+		newbala.GetComponent<Bala>().poder = ATK;
         StartCoroutine(espera());
     }
 
@@ -169,9 +196,19 @@ public class Jugador : Personaje {
         }
 	}
 
+	public void RecibirDano(int daño) {
+		if (defensa < daño) {
+			vida -= (daño - defensa);
+		}
+	}
+
+	public void Atraccion() {
+		rig.AddForce(new Vector3 (direccionjefe.x,0,direccionjefe.z) * 15, ForceMode.Impulse);
+	}
+
     IEnumerator espera()
     {
-        yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(velocidad);
         atacando = false;
         //ataque.enabled = false;
     }
@@ -182,6 +219,7 @@ public class Jugador : Personaje {
         {
             comprarActivo = true;
         }
+			
     }
 
     private void OnTriggerExit(Collider other)
@@ -190,6 +228,8 @@ public class Jugador : Personaje {
         {
             comprarActivo = false;
         }
+
+
     }
 
 }

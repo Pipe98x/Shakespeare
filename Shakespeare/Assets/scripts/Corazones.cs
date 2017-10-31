@@ -27,8 +27,10 @@ public class Corazones : MonoBehaviour {
 		}
 
 		for (int i = vidas; i < corazones.Count; i++) {
-			
-			corazones [i].gameObject.SetActive(false);
+			if (vidas >= 0) {
+				corazones [i].gameObject.SetActive (false);
+			}
+            
 		}
 
 			

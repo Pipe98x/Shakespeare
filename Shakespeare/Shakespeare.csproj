@@ -78,9 +78,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\PinwheelFantasyEffectFreePack2\Scripts\Fireball.cs" />
+    <Compile Include="Assets\PinwheelFantasyEffectFreePack2\Scripts\Spawn.cs" />
     <Compile Include="Assets\amusedART\StoneMonster\Script\Animation_Test.cs" />
     <Compile Include="Assets\scripts\Apuntar.cs" />
     <Compile Include="Assets\scripts\Bala.cs" />
+    <Compile Include="Assets\scripts\BalaJefe.cs" />
     <Compile Include="Assets\scripts\BalaPersigue.cs" />
     <Compile Include="Assets\scripts\Camara.cs" />
     <Compile Include="Assets\scripts\Comprable.cs" />
@@ -88,11 +91,17 @@
     <Compile Include="Assets\scripts\Corazones.cs" />
     <Compile Include="Assets\scripts\Enemigo.cs" />
     <Compile Include="Assets\scripts\EnemigoGuardian.cs" />
+    <Compile Include="Assets\scripts\EnemigoJefe.cs" />
     <Compile Include="Assets\scripts\EnemigoPersigue.cs" />
     <Compile Include="Assets\scripts\Equipable.cs" />
     <Compile Include="Assets\scripts\Generador.cs" />
     <Compile Include="Assets\scripts\Jugador.cs" />
+    <Compile Include="Assets\scripts\Monedas.cs" />
     <Compile Include="Assets\scripts\Personaje.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\animaciones\LowPoly Fantasy Monsters Pack Ver1.0_Demo\READ ME FIRST!!!\character setup guide link.txt" />
+    <None Include="Assets\animaciones\LowPoly Fantasy Monsters Pack Ver1.0_Demo\READ ME FIRST!!!\read me.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
