@@ -22,11 +22,11 @@ public abstract class Personaje : MonoBehaviour {
 		
 	}
 
-	public void Morir() {
+	protected void Morir() {
         Destroy(gameObject);
 	}
 
-    public void saltar(float fuerza)
+    protected void saltar(float fuerza)
     {
         rig.AddForce(new Vector3(0, fuerza, 0), ForceMode.Impulse);
     }

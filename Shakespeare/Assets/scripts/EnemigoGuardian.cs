@@ -73,7 +73,8 @@ public class EnemigoGuardian : Enemigo {
 
 	public void OnTriggerEnter(Collider trigger){
 
-		if (trigger.gameObject.name == "Jefe"){
+   
+        if (trigger.gameObject.name == "Jefe"){
 
 			AumentoVida ();
 	}

@@ -47,7 +47,7 @@ public class Bala: MonoBehaviour {
         transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
     }
 
-	public void Destruir() {
+	protected void Destruir() {
 		Destroy (gameObject);
 	}
 }
