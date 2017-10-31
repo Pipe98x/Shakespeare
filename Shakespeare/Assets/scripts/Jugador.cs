@@ -29,6 +29,10 @@ public class Jugador : Personaje {
 	private Vector3 direccionjefe;
 	private float distanciajefe;
     public Animation anim;
+    public GameObject disparador;
+    public Text ATK_t;
+    public Text DEF_t;
+    public Text VEL_t;
 
     // Use this for initialization
     void Start () {
@@ -56,6 +60,10 @@ public class Jugador : Personaje {
         PocionesVida.text = pocionesvida.ToString();	// que se muestren la cantidad de pociones (int)
         PocionesVelocidad.text = pocionesvelocidad.ToString();
         PocionesFuerza.text = pocionesfuerza.ToString();
+        ATK_t.text = ATK.ToString();
+        DEF_t.text = defensa.ToString();
+        VEL_t.text = ((velocidad - 2.5)*-10).ToString("F0");
+        
 
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -69,14 +77,15 @@ public class Jugador : Personaje {
 
             }
         }
-        if (!(Input.GetKeyDown(KeyCode.A)) && !(Input.GetKey(KeyCode.D)) && !(Input.GetKey(KeyCode.W)) && !(Input.GetKey(KeyCode.S)) && !atacando)
-        {
-            anim.CrossFade("Idle", 0);
-        }
+        
         /// movimiento 
         if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.back * 3 * Time.deltaTime);
+            if (modo == 1)
+            {
+                anim.CrossFade("IzquierdaPistola", 0);
+            }
             
         }
 
@@ -88,10 +97,10 @@ public class Jugador : Personaje {
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.left* 5 * Time.deltaTime);
-            if (modo == 1)
+            if (modo == 1 && !atacando)
             {
                 anim.CrossFade("WalkingArma", 0);
-            }else
+            }else if (!atacando)
             {
                 anim.CrossFade("WalkingShakespeare", 0);
             }
@@ -137,9 +146,10 @@ public class Jugador : Personaje {
             {
                 if (!atacando)
                 {
-                    //ataque.enabled = true;
+                    ataque.enabled = true;
                     atacando = true;
                     StartCoroutine(espera());
+                    StartCoroutine(espada());
                     anim.CrossFade("EspadaShakespeare", 0);
                 }
             }
@@ -150,7 +160,7 @@ public class Jugador : Personaje {
     public void Disparar ()
     {
         GameObject newbala;
-        newbala = Instantiate(bala, transform.position + new Vector3(0, 1, 0), transform.rotation);
+        newbala = Instantiate(bala, disparador.transform.position, disparador.transform.rotation);
 		newbala.GetComponent<Bala>().poder = ATK;
         StartCoroutine(espera());
     }
@@ -163,7 +173,7 @@ public class Jugador : Personaje {
 
 			if (index < 6) {			// toma el index e instacia el item correspondiente como un equipable dentro del inventario
 				Equipable equip;
-				equip = Instantiate (equipables [index], (inventario.transform.position + vectors), transform.rotation) as Equipable;
+				equip = Instantiate (equipables [index], (inventario.transform.position + vectors), Quaternion.Euler(0,0,0)) as Equipable;
 				equip.transform.SetParent (inventario.transform);
 				inventarioItems.Add (equip);
                 equip.jugador = GameObject.FindGameObjectWithTag("Player").gameObject;
@@ -210,7 +220,12 @@ public class Jugador : Personaje {
     {
 		yield return new WaitForSeconds(velocidad);
         atacando = false;
-        //ataque.enabled = false;
+    }
+
+    IEnumerator espada()
+    {
+        yield return new WaitForSeconds(velocidad);
+        ataque.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)

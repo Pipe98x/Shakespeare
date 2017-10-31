@@ -37,14 +37,14 @@ public class Bala: MonoBehaviour {
 
 		if (collision.gameObject.name == "Jefe")
 		{
-			collision.gameObject.GetComponent<EnemigoJefe>().Daño();
+			collision.gameObject.GetComponent<EnemigoJefe>().Daño(0);
 
 		}
     }
 
     public virtual void Moverse()
     {
-        transform.Translate(Vector3.right * velocidad * Time.deltaTime);
+        transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
     }
 
 	public void Destruir() {

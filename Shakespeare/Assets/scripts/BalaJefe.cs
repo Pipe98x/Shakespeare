@@ -37,7 +37,6 @@ public class BalaJefe : Bala {
     public void Atraer()
     {
         objetivo.GetComponent<Jugador>().Atraccion();
-        Debug.Log("atrajo");
     }
 
 	public override void OnCollisionEnter (Collision collision)
@@ -54,4 +53,13 @@ public class BalaJefe : Bala {
 
 		}
 	}
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Espada")
+        {
+            Destroy(gameObject);
+            Debug.Log("destruido");
+        }
+    }
 }

@@ -28,8 +28,9 @@ public class EnemigoGuardian : Enemigo {
         heading = objetivo.transform.position - transform.position;
         distancia = heading.magnitude;
         apuntar = heading / distancia;
+        vidita.GetComponent<TextMesh>().text = vida.ToString();
 
-		if (vida <= 0) {
+        if (vida <= 0) {
 			Morir ();
 		}
 

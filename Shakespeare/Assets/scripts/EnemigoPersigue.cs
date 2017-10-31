@@ -40,7 +40,8 @@ public class EnemigoPersigue : Enemigo {
             
         }
 
-	}
+        vidita.GetComponent<TextMesh>().text = vida.ToString();
+    }
 
   
 

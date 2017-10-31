@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public abstract class Personaje : MonoBehaviour {
 	public int vida;
 	public float velocidad;
@@ -9,6 +10,7 @@ public abstract class Personaje : MonoBehaviour {
 	public int defensa;
     public Rigidbody rig;
     public float alturasalto;
+   
 
     // Use this for initialization
     void Start () {

@@ -8,6 +8,8 @@ public class EnemigoJefe : Enemigo {
 	public float temporizador = 4;
 	public GameObject arma;
 	public Animation anim;
+    private Vector3 heading;
+    private float distanciajugador;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +20,11 @@ public class EnemigoJefe : Enemigo {
 	void Update () {
 
 		temporizador -= Time.deltaTime;
-		if (temporizador <= 0) {
+        heading = GameObject.FindGameObjectWithTag("Player").gameObject.transform.position - transform.position;
+        distanciajugador = heading.magnitude;
+        vidita.GetComponent<TextMesh>().text = vida.ToString();
+
+        if (temporizador <= 0 && distanciajugador <= 10) {
 			Disparar ();
 		}
 	}
@@ -34,12 +40,21 @@ public class EnemigoJefe : Enemigo {
 			temporizador = Random.Range (7, 13);
 		}
 
-	public void Daño(){
-		anim.CrossFade ("damage",0);
+	public void Daño(float tiempo){
+		anim.CrossFade ("damage",tiempo);
 	
 	}
 
-	}
+    public override void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Espada")
+        {
+            vida -= GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<Jugador>().ATK;
+            Daño(0.8f);
+        }
+    }
+
+}
 
 
 

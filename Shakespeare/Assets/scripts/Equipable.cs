@@ -7,7 +7,7 @@ public class Equipable : Comprable {
 
 	public int Ataque;	
 	public int Defensa;
-	public int Velocidad;
+	public float Velocidad;
     private bool equipado = false;
     private int posicionequipado;
 
@@ -42,7 +42,7 @@ public class Equipable : Comprable {
                 {
                     jugador.GetComponent<Jugador>().ATK += Ataque;
                     jugador.GetComponent<Jugador>().defensa += Defensa;
-					jugador.GetComponent<Jugador>().velocidad -= (Velocidad/4);
+					jugador.GetComponent<Jugador>().velocidad -= (Velocidad/10);
                     equipado = true;
                     jugador.GetComponent<Jugador>().ItemsActivos[i] = this;
                     posicionequipado = i;
@@ -56,8 +56,9 @@ public class Equipable : Comprable {
             jugador.GetComponent<Jugador>().defensa -= Defensa;
 			jugador.GetComponent<Jugador>().velocidad += (Velocidad/10);
             equipado = false;
-            
-            
+            jugador.GetComponent<Jugador>().ItemsActivos[posicionequipado] = null;
+
+
         }
     }
 }
