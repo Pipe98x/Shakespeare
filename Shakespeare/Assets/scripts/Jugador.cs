@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Jugador : Personaje {
 
@@ -33,6 +34,9 @@ public class Jugador : Personaje {
     public Text ATK_t;
     public Text DEF_t;
     public Text VEL_t;
+    private bool suelo;
+    private bool pocionfuerza = false;
+    private bool pocionvelocidadd = false;
 
     // Use this for initialization
     void Start () {
@@ -54,6 +58,7 @@ public class Jugador : Personaje {
         if (vida < 0)
         {
             vida = 0;
+            SceneManager.LoadScene("gameover");
         }
 
         monedastienda.text = monedas.ToString();   // que se muestren las monedas en la tienda
@@ -77,7 +82,37 @@ public class Jugador : Personaje {
 
             }
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+
+            if (pocionesfuerza > 0)
+            {
+                if (!pocionfuerza)
+                {
+                    ATK += 3;
+                    pocionesfuerza -= 1;      // al presionar la tecla "1" si hay pociones de vida aumenta esta en 8 unidades
+                    Invoke("FueraFuerza", 10f);
+                }
+
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+
+            if (pocionesfuerza > 0)
+            {
+                if (!pocionvelocidadd)
+                {
+                    velocidad -= 0.5f;
+                    pocionesvelocidad -= 1;      // al presionar la tecla "1" si hay pociones de vida aumenta esta en 8 unidades
+                    Invoke("Fueravelocidad", 10f);
+                }
+
+            }
+        }
+
         /// movimiento 
         if (Input.GetKey(KeyCode.A))
         {
@@ -114,6 +149,7 @@ public class Jugador : Personaje {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if(suelo)
             saltar(alturasalto);
 
         }
@@ -146,15 +182,29 @@ public class Jugador : Personaje {
             {
                 if (!atacando)
                 {
-                    ataque.enabled = true;
+                    
                     atacando = true;
                     StartCoroutine(espera());
                     StartCoroutine(espada());
+                    StartCoroutine(espadas());
                     anim.CrossFade("EspadaShakespeare", 0);
                 }
             }
 
         }
+    }
+
+    private void FueraFuerza()
+    {
+        ATK -= 3;
+        pocionfuerza = false;
+    }
+
+    private void FueraVelocidad()
+    {
+        velocidad += 0.5f;
+        pocionfuerza = false;
+        pocionvelocidadd = true;
     }
 
     public void Disparar ()
@@ -226,6 +276,13 @@ public class Jugador : Personaje {
     {
         yield return new WaitForSeconds(velocidad);
         ataque.enabled = false;
+        
+    }
+
+    IEnumerator espadas()
+    {
+        yield return new WaitForSeconds(0.6f);
+        ataque.enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -245,6 +302,22 @@ public class Jugador : Personaje {
         }
 
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Finish")
+        {
+            suelo = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Finish")
+        {
+            suelo = false;
+        }
     }
 
 }

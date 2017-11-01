@@ -78,7 +78,11 @@ public class EnemigoGuardian : Enemigo {
 
 			AumentoVida ();
 	}
-}
+        if (trigger.gameObject.tag == "Espada")
+        {
+            vida -= GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<Jugador>().ATK;
+        }
+    }
 	public void AumentoVida(){
 		vida += 3;
 		Invoke ("AumentoVida", 10);
