@@ -24,7 +24,12 @@ public class EnemigoJefe : Enemigo {
         distanciajugador = heading.magnitude;
         vidita.GetComponent<TextMesh>().text = vida.ToString();
 
-        if (temporizador <= 0 && distanciajugador <= 10) {
+        if(vida <=0)
+        {
+            Morir();
+        }
+
+        if (temporizador <= 0 && distanciajugador <= 30) {
 			Disparar ();
 		}
 	}

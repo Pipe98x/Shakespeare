@@ -55,7 +55,7 @@ public class Jugador : Personaje {
             vida = 40;          // para que la vida maxima sea 40
         }
 
-        if (vida < 0)
+        if (vida <= 0)
         {
             vida = 0;
             SceneManager.LoadScene("gameover");

@@ -31,7 +31,8 @@ public class EnemigoGuardian : Enemigo {
         vidita.GetComponent<TextMesh>().text = vida.ToString();
 
         if (vida <= 0) {
-			Morir ();
+            DarLoot();
+            Morir ();
 		}
 
         if (distancia <= 10)

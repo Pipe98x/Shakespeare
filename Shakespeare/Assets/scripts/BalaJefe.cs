@@ -17,6 +17,7 @@ public class BalaJefe : Bala {
 	// Update is called once per frame
 	void Update () {
 
+        distancia -= Time.deltaTime;
 		heading = objetivo.gameObject.transform.position - transform.position;
 		distancias = heading.magnitude;
 		direccion = heading / distancia;
